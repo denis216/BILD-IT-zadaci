@@ -30,8 +30,7 @@ public class Zadatak4 {
 			// samo izbaciti ove dvije varijable iz catch-a :)
 			 catch (Exception e) {
 				System.out.println("Netacan unos.Pokusajte ponovo");
-				najVeci = 0;
-				najVeciBrojac = 1;
+				
 				input.nextLine();
 
 
