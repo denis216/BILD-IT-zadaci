@@ -18,7 +18,7 @@ public class Zadatak5 {
 					int broj = input.nextInt();
 					if (broj == 0)
 						break;
-					else if (broj < 1 || broj > 100) {
+					while (broj < 1 || broj > 100) {
 						System.out.println("Unesite broj u rasponu od 1 do 100");
 						broj = input.nextInt();
 					}
