@@ -7,19 +7,26 @@ public class Zadatak5 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		// Petlja vrti dok nije ispunjen uslov
+		int brojN = 0;
 		while (true) {
 			try {
 				System.out.println("Unesite broj n");
-				int brojN = input.nextInt();
-				// Pozivamo metodu i prosledjujemo joj unos
-				printMatrix(brojN);
+				brojN = input.nextInt();
+				while (brojN <= 0 || brojN >= 100) {
+					System.out.println("Broj mora biti izmedju 0 i 100. Unesi ponovo: ");
+					brojN = input.nextInt();
+				}
 				break;
+				
 			} catch (Exception e) {
 				System.out.println("Pogresan unos.Pokusajte ponovo.");
 				// Ako baci exception omogucava ponovni unos
 				input.nextLine();
 			}
 		}
+		// Pozivamo metodu i prosledjujemo joj unos
+		printMatrix(brojN);
+		
 	}
 
 	// Metodi prosledjujemo broj n i printamo matricu nxn
