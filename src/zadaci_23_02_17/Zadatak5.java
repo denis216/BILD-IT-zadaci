@@ -9,7 +9,7 @@ public class Zadatak5 {
 			try {
 				System.out.print("Unesite cijeli broj:");
 				int n = input.nextInt();
-				while (n < 2 || n >= 10) {
+				while (n < 2 || n > 10) {
 					System.out.println("Unesite samo pozitivan broj izmedju 2 i 10: ");
 					n = input.nextInt();
 				}
