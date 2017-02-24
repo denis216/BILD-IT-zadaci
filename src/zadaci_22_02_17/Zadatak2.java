@@ -11,6 +11,10 @@ public class Zadatak2 {
 			try {
 				int computer = (int) (Math.random() * 3);
 				int user = input.nextInt();
+				while(user <0 || user >2){
+					System.out.println("Unesite brojeve u rasponu od 0 do 2");
+					user = input.nextInt();
+				}
 				// Ispod su sve provjere da ne komentarisem svaku posebno :)
 				if (user == 0 && computer == 2) {
 					System.out.println("Izabrali ste makaze.Racunar je izabrao bunar.Racunar je pobjedio");
