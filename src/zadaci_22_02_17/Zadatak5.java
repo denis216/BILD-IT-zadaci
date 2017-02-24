@@ -12,8 +12,8 @@ public class Zadatak5 {
 			try {
 				System.out.println("Unesite broj n");
 				brojN = input.nextInt();
-				while (brojN <= 0 || brojN >= 100) {
-					System.out.println("Broj mora biti izmedju 0 i 100. Unesi ponovo: ");
+				while (brojN <= 0 || brojN > 100) {
+					System.out.println("Broj mora biti izmedju 1 i 100. Unesi ponovo: ");
 					brojN = input.nextInt();
 				}
 				break;
